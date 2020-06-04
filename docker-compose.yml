@@ -9,7 +9,7 @@ services:
       - ./conf/app/etc/nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
       - ./src:/var/www/html
   phpfpm:
-    image: pandagroup/php-fpm:7.3-mysqli
+    image: pandagroup/php-fpm:7.3-magento2
     volumes:
       - ./src:/var/www/html
   mysql:
